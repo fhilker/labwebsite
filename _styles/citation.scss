@@ -10,7 +10,7 @@ $wrap: 800px;
 
 .citation {
   display: flex;
-  margin: 20px 0;
+  margin: 10px 0;
   border-radius: var(--rounded);
   background: var(--background);
   overflow: hidden;
@@ -68,7 +68,7 @@ $wrap: 800px;
 }
 
 .citation-publisher {
-  text-transform: capitalize;
+  font-style: italic;
 }
 
 .citation-description {
@@ -89,6 +89,17 @@ $wrap: 800px;
   display: inline-flex;
   justify-content: flex-start;
   margin: 0;
+}
+
+.citation_metrics {
+  gap: 10px;
+  padding: 20px;
+  padding-left: 30px;
+  display: inline-flex;
+  position: relative;
+  width: 180px;
+  flex-shrink: 0;
+  // box-shadow: var(--shadow);
 }
 
 @container (max-width: #{$wrap}) {
